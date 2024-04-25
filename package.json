@@ -25,6 +25,7 @@
     "@ionic/react-router": "^8.0.0",
     "@types/react-router": "^5.1.20",
     "@types/react-router-dom": "^5.3.3",
+    "capacitor-plugin-app-tracking-transparency": "^2.0.4",
     "ionicons": "^7.0.0",
     "onesignal-cordova-plugin": "^5.1.2",
     "react": "^18.2.0",
@@ -33,6 +34,7 @@
     "react-router-dom": "^5.3.4"
   },
   "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
     "@capacitor/cli": "6.0.0",
     "@testing-library/dom": ">=7.21.4",
     "@testing-library/jest-dom": "^5.16.5",

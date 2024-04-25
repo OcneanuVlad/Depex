@@ -1,5 +1,5 @@
 import { Redirect, Route } from "react-router-dom";
-import { IonApp, IonContent, IonRouterOutlet, setupIonicReact } from "@ionic/react";
+import { IonApp, IonContent, IonRouterOutlet, isPlatform, setupIonicReact } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import Home from "./pages/Home";
 
@@ -35,6 +35,7 @@ import "./theme/variables.css";
 import OneSignal from "onesignal-cordova-plugin";
 import { useEffect } from "react";
 import { Capacitor } from "@capacitor/core";
+import { AppTrackingStatusResponse, AppTrackingTransparency } from "capacitor-plugin-app-tracking-transparency";
 
 setupIonicReact();
 
@@ -44,6 +45,10 @@ const App: React.FC = () => {
   useEffect(() => {
     if (Capacitor.getPlatform() !== "web") {
       OneSignalInit();
+    }
+
+    if (isPlatform("ios")) {
+      requestPermission();
     }
   }, []);
 
@@ -65,8 +70,20 @@ const App: React.FC = () => {
     });
   }
 
+  async function requestPermission(): Promise<AppTrackingStatusResponse> {
+    const response = await AppTrackingTransparency.requestPermission();
+
+    console.log("----------------", response);
+    // { status: 'authorized' } for example
+
+    if (response.status === "authorized") {
+    }
+
+    return response;
+  }
+
   return (
-    <IonApp>
+    <IonApp style={{ paddingTop: isPlatform("ios") ? "14%" : "auto" }}>
       <IonContent scrollY={false} style={{ width: "100vw", height: "100vh", border: "none" }}>
         <iframe src="https://norocosulcastigator.com/" style={{ width: "100vw", height: "100vh", border: "none" }} scrolling="yes"></iframe>
       </IonContent>
