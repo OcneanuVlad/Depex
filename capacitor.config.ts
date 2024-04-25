@@ -1,8 +1,8 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'ionic-iframe-test',
+  appId: 'com.norocosul.app',
+  appName: 'Norocosul Castigator',
   webDir: 'dist'
 };
 
