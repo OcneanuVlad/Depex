@@ -1,7 +1,0 @@
-{
-  "name": "Norocosul Castigator",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react-vite"
-}

@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		707169922A2F749D00EBE8AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E7268F2A277A0F00AAE00D /* SceneDelegate.swift */; };
+		707169962A2F7D7E00EBE8AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70E726962A277A1000AAE00D /* Assets.xcassets */; };
+		7099BE732A28B7CD0063E718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E7268D2A277A0F00AAE00D /* AppDelegate.swift */; };
+		7099BE742A28BE460063E718 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E726912A277A0F00AAE00D /* ViewController.swift */; };
+		70D6EB8B2A33184500D47EE2 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D6EB8A2A33184500D47EE2 /* AppTrackingTransparency.framework */; };
+		70E7268E2A277A0F00AAE00D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E7268D2A277A0F00AAE00D /* AppDelegate.swift */; };
+		70E726902A277A0F00AAE00D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E7268F2A277A0F00AAE00D /* SceneDelegate.swift */; };
+		70E726922A277A0F00AAE00D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E726912A277A0F00AAE00D /* ViewController.swift */; };
+		70E726952A277A0F00AAE00D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E726932A277A0F00AAE00D /* Main.storyboard */; };
+		70E726972A277A1000AAE00D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70E726962A277A1000AAE00D /* Assets.xcassets */; };
+		70E7269A2A277A1000AAE00D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E726982A277A1000AAE00D /* LaunchScreen.storyboard */; };
+		70E726A82A278F0800AAE00D /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E726A72A278F0800AAE00D /* NotificationService.swift */; };
+		70E726AC2A278F0800AAE00D /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 70E726A52A278F0800AAE00D /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		70E726B32A27940100AAE00D /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = 70E726B22A27940100AAE00D /* OneSignal */; };
+		70E726B52A27940100AAE00D /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 70E726B42A27940100AAE00D /* OneSignalExtension */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70E726AA2A278F0800AAE00D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70E726822A277A0F00AAE00D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70E726A42A278F0800AAE00D;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		70E726B02A278F0800AAE00D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				70E726AC2A278F0800AAE00D /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		707169932A2F770C00EBE8AB /* veziv-web-view */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "veziv-web-view"; sourceTree = "<group>"; };
+		70D6EB8A2A33184500D47EE2 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		70E7268A2A277A0F00AAE00D /* Depex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Depex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E7268D2A277A0F00AAE00D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70E7268F2A277A0F00AAE00D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		70E726912A277A0F00AAE00D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		70E726942A277A0F00AAE00D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70E726962A277A1000AAE00D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70E726992A277A1000AAE00D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70E7269B2A277A1000AAE00D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70E726A52A278F0800AAE00D /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E726A72A278F0800AAE00D /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		70E726A92A278F0800AAE00D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70E726B62A27957C00AAE00D /* veziv-web-view.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "veziv-web-view.entitlements"; sourceTree = "<group>"; };
+		70E726BA2A27979500AAE00D /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70E726872A277A0F00AAE00D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D6EB8B2A33184500D47EE2 /* AppTrackingTransparency.framework in Frameworks */,
+				70E726B32A27940100AAE00D /* OneSignal in Frameworks */,
+				70E726B52A27940100AAE00D /* OneSignalExtension in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70E726A22A278F0800AAE00D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70E726812A277A0F00AAE00D = {
+			isa = PBXGroup;
+			children = (
+				70E7268C2A277A0F00AAE00D /* veziv-web-view */,
+				707169932A2F770C00EBE8AB /* veziv-web-view */,
+				70E726A62A278F0800AAE00D /* OneSignalNotificationServiceExtension */,
+				70E7268B2A277A0F00AAE00D /* Products */,
+				70E726B72A27958800AAE00D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		70E7268B2A277A0F00AAE00D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70E7268A2A277A0F00AAE00D /* Depex.app */,
+				70E726A52A278F0800AAE00D /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70E7268C2A277A0F00AAE00D /* veziv-web-view */ = {
+			isa = PBXGroup;
+			children = (
+				70E726B62A27957C00AAE00D /* veziv-web-view.entitlements */,
+				70E7268D2A277A0F00AAE00D /* AppDelegate.swift */,
+				70E726912A277A0F00AAE00D /* ViewController.swift */,
+				70E7268F2A277A0F00AAE00D /* SceneDelegate.swift */,
+				70E726932A277A0F00AAE00D /* Main.storyboard */,
+				70E726962A277A1000AAE00D /* Assets.xcassets */,
+				70E726982A277A1000AAE00D /* LaunchScreen.storyboard */,
+				70E7269B2A277A1000AAE00D /* Info.plist */,
+			);
+			path = "veziv-web-view";
+			sourceTree = "<group>";
+		};
+		70E726A62A278F0800AAE00D /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				70E726BA2A27979500AAE00D /* OneSignalNotificationServiceExtension.entitlements */,
+				70E726A72A278F0800AAE00D /* NotificationService.swift */,
+				70E726A92A278F0800AAE00D /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		70E726B72A27958800AAE00D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70D6EB8A2A33184500D47EE2 /* AppTrackingTransparency.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70E726892A277A0F00AAE00D /* Depex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70E7269E2A277A1000AAE00D /* Build configuration list for PBXNativeTarget "Depex" */;
+			buildPhases = (
+				70E726862A277A0F00AAE00D /* Sources */,
+				70E726872A277A0F00AAE00D /* Frameworks */,
+				70E726882A277A0F00AAE00D /* Resources */,
+				70E726B02A278F0800AAE00D /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70E726AB2A278F0800AAE00D /* PBXTargetDependency */,
+			);
+			name = Depex;
+			packageProductDependencies = (
+				70E726B22A27940100AAE00D /* OneSignal */,
+				70E726B42A27940100AAE00D /* OneSignalExtension */,
+			);
+			productName = "veziv-web-view";
+			productReference = 70E7268A2A277A0F00AAE00D /* Depex.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70E726A42A278F0800AAE00D /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70E726AD2A278F0800AAE00D /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				70E726A12A278F0800AAE00D /* Sources */,
+				70E726A22A278F0800AAE00D /* Frameworks */,
+				70E726A32A278F0800AAE00D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 70E726A52A278F0800AAE00D /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70E726822A277A0F00AAE00D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				ORGANIZATIONNAME = "Veziv IT Services";
+				TargetAttributes = {
+					70E726892A277A0F00AAE00D = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					70E726A42A278F0800AAE00D = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 70E726852A277A0F00AAE00D /* Build configuration list for PBXProject "Depex" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70E726812A277A0F00AAE00D;
+			packageReferences = (
+				70E726B12A27940100AAE00D /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+			);
+			productRefGroup = 70E7268B2A277A0F00AAE00D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70E726892A277A0F00AAE00D /* Depex */,
+				70E726A42A278F0800AAE00D /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70E726882A277A0F00AAE00D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70E7269A2A277A1000AAE00D /* LaunchScreen.storyboard in Resources */,
+				70E726972A277A1000AAE00D /* Assets.xcassets in Resources */,
+				70E726952A277A0F00AAE00D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70E726A32A278F0800AAE00D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				707169962A2F7D7E00EBE8AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70E726862A277A0F00AAE00D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70E726922A277A0F00AAE00D /* ViewController.swift in Sources */,
+				70E7268E2A277A0F00AAE00D /* AppDelegate.swift in Sources */,
+				70E726902A277A0F00AAE00D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70E726A12A278F0800AAE00D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7099BE742A28BE460063E718 /* ViewController.swift in Sources */,
+				7099BE732A28B7CD0063E718 /* AppDelegate.swift in Sources */,
+				70E726A82A278F0800AAE00D /* NotificationService.swift in Sources */,
+				707169922A2F749D00EBE8AB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70E726AB2A278F0800AAE00D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70E726A42A278F0800AAE00D /* OneSignalNotificationServiceExtension */;
+			targetProxy = 70E726AA2A278F0800AAE00D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		70E726932A277A0F00AAE00D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70E726942A277A0F00AAE00D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		70E726982A277A1000AAE00D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70E726992A277A1000AAE00D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70E7269C2A277A1000AAE00D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		70E7269D2A277A1000AAE00D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70E7269F2A277A1000AAE00D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "veziv-web-view/veziv-web-view.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5M3X9CC3W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "veziv-web-view/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ro.depex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70E726A02A277A1000AAE00D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "veziv-web-view/veziv-web-view.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5M3X9CC3W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "veziv-web-view/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ro.depex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		70E726AE2A278F0800AAE00D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5M3X9CC3W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ro.depex.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70E726AF2A278F0800AAE00D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5M3X9CC3W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ro.depex.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70E726852A277A0F00AAE00D /* Build configuration list for PBXProject "Depex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70E7269C2A277A1000AAE00D /* Debug */,
+				70E7269D2A277A1000AAE00D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70E7269E2A277A1000AAE00D /* Build configuration list for PBXNativeTarget "Depex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70E7269F2A277A1000AAE00D /* Debug */,
+				70E726A02A277A1000AAE00D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70E726AD2A278F0800AAE00D /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70E726AE2A278F0800AAE00D /* Debug */,
+				70E726AF2A278F0800AAE00D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		70E726B12A27940100AAE00D /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		70E726B22A27940100AAE00D /* OneSignal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70E726B12A27940100AAE00D /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignal;
+		};
+		70E726B42A27940100AAE00D /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70E726B12A27940100AAE00D /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalExtension;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 70E726822A277A0F00AAE00D /* Project object */;
+}
